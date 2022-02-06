@@ -1,2 +1,2 @@
-REGEX="(invite|progress|setup|ok|cancel|bye|ack|auth|try|sdp)(?=.*29700)"
+REGEX="(invite|progress|setup|ok|cancel|bye|ack|auth|try|sdp)(?=.*11111)"
 PORT_AND_OPTIONS="udp port 5060"
