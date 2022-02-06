@@ -34,9 +34,9 @@ include_once ('header.php');
 							<td>Role</td>
 						</tr>
 
-<?php
-while ($stmt->fetch()) {
-?>
+							<?php
+							while ($stmt->fetch()) {
+							?>
 						<tr>
 							<form action=controller.php method="post">
 							<td><label for="row"><?=$row;$row++?></label></td>
@@ -53,12 +53,10 @@ while ($stmt->fetch()) {
 							</td>							
 						</tr>
 						</form>
-<?php } $stmt->close(); ?>
+					<?php } $stmt->close(); ?>
 
 					</table>
-					
-				
-				
+			
 				<h3>Add new user</h3>
 				<form action="controller.php" method="post">
 				<table>
