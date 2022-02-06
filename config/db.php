@@ -1,9 +1,9 @@
 <?php
 #Edit MySQL Database variables below
 $DB_HOST = 'localhost';
-$DB_USER = 'chakavak';
-$DB_PASS = 'uNBCk5Q49pSm9Ez';
-$DB_NAME = 'chakavak_ssw';
+$DB_USER = 'username';
+$DB_PASS = 'password';
+$DB_NAME = 'db_name';
 
 $db = mysqli_connect($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
 if (mysqli_connect_errno()) {
@@ -12,7 +12,7 @@ if (mysqli_connect_errno()) {
 class ssw_db extends SQLite3 {
 	function __construct() {
 		#Chnage the SQLite database file url below
-	   $this->open('/usr/local/chakavak/var/lib/freeswitch/db/sofia_reg_internal.db');
+	   $this->open('path_to_sqlite_db_file.db');
 	}
  }
  $sqlite_db = new ssw_db();
